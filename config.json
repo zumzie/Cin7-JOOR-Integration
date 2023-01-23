@@ -1,0 +1,111 @@
+{
+    "data_container.json": {
+        "flow": "",
+        "store_name": "",
+        "token": "",
+        "opt_color": "",
+        "opt_color_unique": "",
+        "opt_color_code_unique": "",
+        "opt_size": "",
+        "opt_size_unique": "",
+        "opt_size_code_unique": "",
+        "opt_size_desc_unique": "",
+        "eval_size_name": "",
+        "eval_size_code": "",
+        "eval_size_description": "",
+        "opt_materials": "",
+        "opt_fabric": "",
+        "style_identifier": "",
+        "time_diff": "",
+        "time_diff_img": "",
+        "price_label": "",
+        "price_currency": "",
+        "eval_style_name": "",
+        "eval_style_number": "",
+        "eval_color_name": "",
+        "eval_color_code": "",
+        "eval_silhouette": "",
+        "eval_style_description": "",
+        "eval_upc": "",
+        "eval_customer_name": "",
+        "eval_customer_alias": "",
+        "eval_buyer_name": "",
+        "eval_buyer_email": ""
+    },
+    "default_config.json": {
+        "cin7_api_version": "2022-07",
+        "contact_email": {
+            "to": "",
+            "cc": "",
+            "cci": ""
+        },
+        "options_settings": {
+            "size": "Size",
+            "color": "Color",
+            "materials": "Material",
+            "fabrication": "Fabric",
+            "unique_options": {
+                "size": "Unique Size",
+                "size_code": "''",
+                "size_description": "''",
+                "color": "'Unique Color' + option_sufixed_to_color",
+                "color_code": "Unique Color"
+            }
+        },
+        "flows_settings": {
+            "styles": {
+                "active": true,
+                "frequency": 30,
+                "scope_from_date": {
+                    "year": 0,
+                    "month": 0,
+                    "day": 0,
+                    "hour": 0,
+                    "minute": 45
+                },
+                "Metafields": {
+                    "customFields": []
+                },
+                "tags": {
+                    "eval_variant_to_exclude": []
+                },
+                "size_name_to_casepack_id": [],
+                "prod_type_to_exclude": [],
+                "create_styles_per_variant": false,
+                "create_styles_per_color_variant": false,
+                "variant_images_at_swatch_level": false,
+                "variant_images_duplicated_at_style_level": false,
+                "upload_multiple_variants_images_at_style_level": true,
+                "eval_style_name": "cur_product['name']",
+                "eval_style_number": "cur_product['id'].toString()",
+                "eval_style_description": "unescape(cur_product['body_html']).replace(/(<([^>]+)>)/ig,'').replace(/&amp;/ig,'&').replace(/&nbsp;/ig,' ')",
+                "eval_style_fabrication": "''",
+                "eval_style_division": "''",
+                "eval_style_measurement": "''",
+                "eval_style_materials": "''",
+                "eval_joor_categories": "''",
+                "eval_upc": "((typeof cur_variant.barcode != 'undefined' && cur_variant.barcode != null)?cur_variant.barcode:'')",
+                "eval_silhouette": "cur_product['product_type']",
+                "eval_color_name": "cur_variant[color_option] + option_sufixed_to_color",
+                "eval_color_code": "cur_color_name",
+                "eval_size_name": "cur_variant[size_option]",
+                "eval_size_code": "''",
+                "eval_size_description": "''",
+                "eval_unit_price": "0.1",
+                "manage_wholesale_pricing_in_joor": true,
+                "manage_wholesale_pricing_in_joor_except_default_pricetype": false,
+                "manage_retail_pricing_in_joor": false,
+                "manage_retail_pricing_in_joor_except_default_pricetype": false,
+                "manage_style_description_in_joor": false,
+                "manage_styles_display_order_in_joor": true,
+                "eval_unit_retail_price": "cur_variant['price']"
+            }
+        },
+        "price": {
+            "price_label": "",
+            "price_currency": "USD",
+            "price_retail_currency": "USD",
+            "other_prices": []
+        }
+    }
+}
