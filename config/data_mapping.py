@@ -10,7 +10,7 @@ import grab_token as gb
 class DataMapper:
     def __init__(self):
         self.repo_name = "BrandSettings" # Name of repository
-        self.repo_owner = "christianagu" # username
+        self.repo_owner = "zumzie" # username
         self.config_folder = "Configs/Sandbox" # folder path
         self.access_token = gb.get_github_token() # access token for github
         self.g = Github(self.access_token) # creates a github object using the access token
